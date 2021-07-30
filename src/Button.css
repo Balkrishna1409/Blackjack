@@ -1,0 +1,49 @@
+.button__container
+{
+    background-color: rgb(42, 77, 20);
+    padding: 20px;
+    border-radius: 10px;
+}
+.hit, .stand, .deal
+{
+    margin-right: 10px;
+    width: 80px;
+    height: 40px;
+    font-size: larger;
+    font-weight: 900;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+
+.hit
+{
+    background-color: blue;
+    
+}
+.hit:hover{
+    cursor: pointer;
+    background-color: black;
+    color: blue;
+}
+
+.stand
+{
+    background-color: yellow;
+    color: black;
+}
+.stand:hover{
+    cursor: pointer;
+    background-color: black;
+    color: yellow;
+}
+.deal
+{
+    background-color: red;
+  }
+.deal:hover{
+    cursor: pointer;
+    background-color: black;
+    color: red;
+}
