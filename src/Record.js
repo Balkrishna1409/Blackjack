@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { ScoreContext } from './App'
 import './Record.css'
 function Record() {
+   const {records }= useContext(ScoreContext);
+   const [record,setRecord]=records;
     return (
         <div className='record'>
            <table className='record__table'>
@@ -10,9 +13,9 @@ function Record() {
                    <th className='draw'>Draw</th>
                </tr>
                <tr>
-               <td className='win'>0</td>
-                <td className='lose'>0</td>
-                <td className='draw'>0</td>  
+               <td className='win'>{record[0]}</td>
+                <td className='lose'>{record[1]}</td>
+                <td className='draw'>{record[2]}</td>  
                </tr>
                
                </table> 
